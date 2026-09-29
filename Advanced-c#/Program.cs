@@ -1,4 +1,6 @@
 ﻿using Advanced_c_.Models;
+using Advanced_c_.Repository;
+using Advanced_c_.Interface;
 using System.ComponentModel;
 using System.Web;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -69,12 +71,22 @@ namespace Advanced_c_
             //Console.WriteLine(c1.Value);
             #endregion
             #region Question 09
-            NumberContainer<Product> container =
-            new NumberContainer<Product>();
+            //NumberContainer<Product> container =
+            //new NumberContainer<Product>();
 
-            container.Value.Name = "Laptop";
+            //container.Value.Name = "Laptop";
 
-            Console.WriteLine(container.Value.Name);
+            //Console.WriteLine(container.Value.Name);
+            #endregion
+            #region Question 10
+            var printer =new Advanced_c_.Interface.GenericPrinter<Advanced_c_.Repository.Product>();
+
+            var product = new Advanced_c_.Repository.Product
+            {
+                Name = "Laptop"
+            };
+
+            printer.PrintItem(product);
             #endregion
 
         }
