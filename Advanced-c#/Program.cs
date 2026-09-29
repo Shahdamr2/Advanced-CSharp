@@ -175,13 +175,25 @@ namespace Advanced_c_
 
             #endregion
             #region Question 19
-            MyContainer<string> c1 = new MyContainer<string>();
-            c1.Value = "Hello";
-            c1.Display();
+            //MyContainer<string> c1 = new MyContainer<string>();
+            //c1.Value = "Hello";
+            //c1.Display();
 
-            MyContainer<int> c2 = new MyContainer<int>();
-            c2.Value = 100;
-            c2.Display();
+            //MyContainer<int> c2 = new MyContainer<int>();
+            //c2.Value = 100;
+            //c2.Display();
+            #endregion
+            #region Question 20
+            Cache<string, string> cache = new Cache<string, string>();
+
+            cache.Add("User1", "Shahd", TimeSpan.FromSeconds(5));
+
+            Console.WriteLine("Get: " + cache.Get("User1"));
+            Console.WriteLine("Contains: " + cache.Contains("User1"));
+
+            cache.Remove("User1");
+
+            Console.WriteLine("After Remove: " + cache.Contains("User1"));
             #endregion
         }
     }
