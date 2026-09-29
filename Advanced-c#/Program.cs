@@ -50,17 +50,23 @@ namespace Advanced_c_
             //Console.WriteLine(maxDouble); 
             #endregion
             #region Question 07
-            NumberContainer<int> n1 = new NumberContainer<int>();
-            n1.Value = 10;
-            Console.WriteLine(n1.Value);
+            //NumberContainer<int> n1 = new NumberContainer<int>();
+            //n1.Value = 10;
+            //Console.WriteLine(n1.Value);
 
-            NumberContainer<double> n2 = new NumberContainer<double>();
-            n2.Value = 5.5;
-            Console.WriteLine(n2.Value);
+            //NumberContainer<double> n2 = new NumberContainer<double>();
+            //n2.Value = 5.5;
+            //Console.WriteLine(n2.Value);
 
-            NumberContainer<bool> n3 = new NumberContainer<bool>();
-            n3.Value = true;
-            Console.WriteLine(n3.Value);
+            //NumberContainer<bool> n3 = new NumberContainer<bool>();
+            //n3.Value = true;
+            //Console.WriteLine(n3.Value);
+            #endregion
+            #region Question 08
+            NumberContainer<string> c1 = new NumberContainer<string>();
+            c1.Value = "shahd";
+
+            Console.WriteLine(c1.Value);
             #endregion
 
         }
