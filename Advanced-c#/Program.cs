@@ -163,16 +163,25 @@ namespace Advanced_c_
             //    printDog(new Dog { Name = "Rocky" });
             #endregion
             #region Question 18
-            
-                Counter<int> c1 = new Counter<int>();
-                Counter<int> c2 = new Counter<int>();
-                Counter<int> c3 = new Counter<int>();
 
-                Counter<string> c4 = new Counter<string>();
+            //Counter<int> c1 = new Counter<int>();
+            //Counter<int> c2 = new Counter<int>();
+            //Counter<int> c3 = new Counter<int>();
 
-                Console.WriteLine("Int Count: " + Counter<int>.Count);
-                Console.WriteLine("String Count: " + Counter<string>.Count);
-            
+            //Counter<string> c4 = new Counter<string>();
+
+            //Console.WriteLine("Int Count: " + Counter<int>.Count);
+            //Console.WriteLine("String Count: " + Counter<string>.Count);
+
+            #endregion
+            #region Question 19
+            MyContainer<string> c1 = new MyContainer<string>();
+            c1.Value = "Hello";
+            c1.Display();
+
+            MyContainer<int> c2 = new MyContainer<int>();
+            c2.Value = 100;
+            c2.Display();
             #endregion
         }
     }

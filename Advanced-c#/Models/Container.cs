@@ -6,10 +6,16 @@ namespace Advanced_c_.Models
 {
     internal class Container<T>
     {
-        private T? _value;
+        public T Value { get; set; } = default!;
 
-        
-        public void Add(T value) => _value = value;
-        public T? Get() => _value;
+        public void Display()
+        {
+            Console.WriteLine("Value: " + Value);
+        }
+
+
+        //public void Add(T value) => _value = value;
+        //public T? Get() => _value;
+
     }
 }
