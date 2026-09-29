@@ -90,15 +90,24 @@ namespace Advanced_c_
             #endregion
             #region Question 11
 
-            AnimalContainer<Dog> container = new AnimalContainer<Dog>();
+            //AnimalContainer<Dog> container = new AnimalContainer<Dog>();
 
-            container.Value = new Dog
-            {
-                Name = "Max"
-            };
+            //container.Value = new Dog
+            //{
+            //    Name = "Max"
+            //};
 
-            Console.WriteLine(container.Value.Name);
+            //Console.WriteLine(container.Value.Name);
 
+            #endregion
+            #region Question 12
+            
+            var container = new ComparableContainer<Book>();
+
+            Book book = container.Create();
+            book.Title = "C# Advanced";
+
+            Console.WriteLine(book.Title);
             #endregion
 
         }
