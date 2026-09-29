@@ -79,14 +79,26 @@ namespace Advanced_c_
             //Console.WriteLine(container.Value.Name);
             #endregion
             #region Question 10
-            var printer =new Advanced_c_.Interface.GenericPrinter<Advanced_c_.Repository.Product>();
+            //var printer =new Advanced_c_.Interface.GenericPrinter<Advanced_c_.Repository.Product>();
 
-            var product = new Advanced_c_.Repository.Product
+            //var product = new Advanced_c_.Repository.Product
+            //{
+            //    Name = "Laptop"
+            //};
+
+            //printer.PrintItem(product);
+            #endregion
+            #region Question 11
+
+            AnimalContainer<Dog> container = new AnimalContainer<Dog>();
+
+            container.Value = new Dog
             {
-                Name = "Laptop"
+                Name = "Max"
             };
 
-            printer.PrintItem(product);
+            Console.WriteLine(container.Value.Name);
+
             #endregion
 
         }
