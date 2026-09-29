@@ -141,26 +141,38 @@ namespace Advanced_c_
 
             #endregion
             #region Question 17
-            // Covariance (out)
-            IEnumerable<Dog> dogs = new List<Dog>
-        {
-            new Dog { Name = "Max" }
-        };
+            //    // Covariance (out)
+            //    IEnumerable<Dog> dogs = new List<Dog>
+            //{
+            //    new Dog { Name = "Max" }
+            //};
 
-            IEnumerable<Animal> animals = dogs;
+            //    IEnumerable<Animal> animals = dogs;
 
-            foreach (Animal animal in animals)
-            {
-                Console.WriteLine("Covariance: " + animal.Name);
-            }
+            //    foreach (Animal animal in animals)
+            //    {
+            //        Console.WriteLine("Covariance: " + animal.Name);
+            //    }
 
-            // Contravariance (in)
-            Action<Animal> printAnimal = animal =>
-                Console.WriteLine("Contravariance: " + animal.Name);
+            //    // Contravariance (in)
+            //    Action<Animal> printAnimal = animal =>
+            //        Console.WriteLine("Contravariance: " + animal.Name);
 
-            Action<Dog> printDog = printAnimal;
+            //    Action<Dog> printDog = printAnimal;
 
-            printDog(new Dog { Name = "Rocky" });
+            //    printDog(new Dog { Name = "Rocky" });
+            #endregion
+            #region Question 18
+            
+                Counter<int> c1 = new Counter<int>();
+                Counter<int> c2 = new Counter<int>();
+                Counter<int> c3 = new Counter<int>();
+
+                Counter<string> c4 = new Counter<string>();
+
+                Console.WriteLine("Int Count: " + Counter<int>.Count);
+                Console.WriteLine("String Count: " + Counter<string>.Count);
+            
             #endregion
         }
     }
