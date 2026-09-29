@@ -1,11 +1,13 @@
 ﻿using Advanced_c_.Models;
 using System.ComponentModel;
+using System.Web;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Advanced_c_
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             #region Question 01
@@ -27,11 +29,22 @@ namespace Advanced_c_
 
             #endregion
             #region Question 03
-            Pair<int,string> employee = new(1, "Shahd");
-            Console.WriteLine(employee.First);
-            Console.WriteLine(employee.Second);
+            //Pair<int,string> employee = new(1, "Shahd");
+            //Console.WriteLine(employee.First);
+            //Console.WriteLine(employee.Second);
+            #endregion
+            #region Question 04
+            int a = 5;
+            int b = 10;
+            Utility<int>.Swap(ref a, ref b);
+
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+
+
             #endregion
 
         }
+
     }
 }
