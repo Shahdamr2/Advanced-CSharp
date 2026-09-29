@@ -1,4 +1,6 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using Advanced_c_.Models;
+using System.ComponentModel;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Advanced_c_
 {
@@ -6,9 +8,23 @@ namespace Advanced_c_
     {
         static void Main(string[] args)
         {
-            #region Qurstion 01
+            #region Question 01
             //A Generic Class is a class that uses a type parameter(T) instead of specifying a data type in advance.
             //We use generics to avoid code duplication, improve code reusability, and provide type safety.
+            #endregion
+            #region Question 02
+            #region Number
+            Container<int> container = new();
+            container.Add(100);
+            Console.WriteLine(container.Get());
+            #endregion
+            ////////
+            #region String
+            Container<string> container1 = new();
+            container1.Add("Shahd");
+            Console.WriteLine(container1.Get()); 
+            #endregion
+
             #endregion
         }
     }
