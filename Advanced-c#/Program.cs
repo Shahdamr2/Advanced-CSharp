@@ -115,17 +115,24 @@ namespace Advanced_c_
 
             #endregion
             #region Question 14
-            SafeList<int> numbers = new SafeList<int>();
+            //SafeList<int> numbers = new SafeList<int>();
 
-            numbers.Add(10);
-            numbers.Add(20);
-            numbers.Add(30);
+            //numbers.Add(10);
+            //numbers.Add(20);
+            //numbers.Add(30);
 
-            Console.WriteLine(numbers.Get(1));
-            Console.WriteLine(numbers.Get(5));
-        }
+            //Console.WriteLine(numbers.Get(1));
+            //Console.WriteLine(numbers.Get(5));
+
             #endregion
+            #region Question 15
+            Pair<int> numbers = new Pair<int>(10, 20);
+            numbers.Display();
 
+            Pair<string> names = new Pair<string>("Ali", "Sara");
+            names.Display(); 
+            #endregion
+        }
     }
 
     }

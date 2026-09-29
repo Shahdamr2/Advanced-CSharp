@@ -4,15 +4,22 @@ using System.Text;
 
 namespace Advanced_c_.Models
 {
-    internal class Pair<T1, T2>
+    class Pair<T>
     {
-        public T1 First { get; set; }
-        public T2 Second { get; set; }
+        public T First { get; set; }
+        public T Second { get; set; }
 
-        public Pair(T1 first, T2 second)
+        public Pair(T first, T second)
         {
             First = first;
             Second = second;
         }
+
+        public void Display()
+        {
+            Console.WriteLine($"First: {First}");
+            Console.WriteLine($"Second: {Second}");
+        }
     }
 }
+
