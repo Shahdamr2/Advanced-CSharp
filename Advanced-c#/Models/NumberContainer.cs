@@ -4,9 +4,13 @@ using System.Text;
 
 namespace Advanced_c_.Models
 {
-    class NumberContainer<T> where T : class
+    class Product
     {
-        public T Value { get; set; }
+        public string Name { get; set; } = "";
     }
-    
+
+    class NumberContainer<T> where T : new()
+    {
+        public T Value { get; set; } = new T();
+    }
 }

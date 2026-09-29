@@ -63,10 +63,18 @@ namespace Advanced_c_
             //Console.WriteLine(n3.Value);
             #endregion
             #region Question 08
-            NumberContainer<string> c1 = new NumberContainer<string>();
-            c1.Value = "shahd";
+            //NumberContainer<string> c1 = new NumberContainer<string>();
+            //c1.Value = "shahd";
 
-            Console.WriteLine(c1.Value);
+            //Console.WriteLine(c1.Value);
+            #endregion
+            #region Question 09
+            NumberContainer<Product> container =
+            new NumberContainer<Product>();
+
+            container.Value.Name = "Laptop";
+
+            Console.WriteLine(container.Value.Name);
             #endregion
 
         }
