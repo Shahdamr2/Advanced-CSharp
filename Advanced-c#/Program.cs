@@ -133,15 +133,39 @@ namespace Advanced_c_
             //names.Display(); 
             #endregion
             #region Question 16
-            IPrinter<Dog> printer = new AnimalPrinter();
+            //IPrinter<Dog> printer = new AnimalPrinter();
 
-            Dog dog = new Dog { Name = "Max" };
+            //Dog dog = new Dog { Name = "Max" };
 
-            printer.Print(dog);
-        }
+            //printer.Print(dog);
+
             #endregion
+            #region Question 17
+            // Covariance (out)
+            IEnumerable<Dog> dogs = new List<Dog>
+        {
+            new Dog { Name = "Max" }
+        };
+
+            IEnumerable<Animal> animals = dogs;
+
+            foreach (Animal animal in animals)
+            {
+                Console.WriteLine("Covariance: " + animal.Name);
+            }
+
+            // Contravariance (in)
+            Action<Animal> printAnimal = animal =>
+                Console.WriteLine("Contravariance: " + animal.Name);
+
+            Action<Dog> printDog = printAnimal;
+
+            printDog(new Dog { Name = "Rocky" });
+            #endregion
+        }
     }
-    }
+
+}
 
     
 
