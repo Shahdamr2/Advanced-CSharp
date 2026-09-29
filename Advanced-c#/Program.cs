@@ -126,14 +126,22 @@ namespace Advanced_c_
 
             #endregion
             #region Question 15
-            Pair<int> numbers = new Pair<int>(10, 20);
-            numbers.Display();
+            //Pair<int> numbers = new Pair<int>(10, 20);
+            //numbers.Display();
 
-            Pair<string> names = new Pair<string>("Ali", "Sara");
-            names.Display(); 
+            //Pair<string> names = new Pair<string>("Ali", "Sara");
+            //names.Display(); 
             #endregion
+            #region Question 16
+            IPrinter<Dog> printer = new AnimalPrinter();
+
+            Dog dog = new Dog { Name = "Max" };
+
+            printer.Print(dog);
         }
+            #endregion
+    }
     }
 
-    }
+    
 
