@@ -101,13 +101,18 @@ namespace Advanced_c_
 
             #endregion
             #region Question 12
-            
-            var container = new ComparableContainer<Book>();
 
-            Book book = container.Create();
-            book.Title = "C# Advanced";
+            //var container = new ComparableContainer<Book>();
 
-            Console.WriteLine(book.Title);
+            //Book book = container.Create();
+            //book.Title = "C# Advanced";
+
+            //Console.WriteLine(book.Title);
+            #endregion
+            #region Question 13
+            var intContainer = new DefaultContainer<int>();
+            Console.WriteLine(intContainer.GetDefault());
+
             #endregion
 
         }
