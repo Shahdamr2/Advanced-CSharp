@@ -13,19 +13,25 @@ namespace Advanced_c_
             //We use generics to avoid code duplication, improve code reusability, and provide type safety.
             #endregion
             #region Question 02
-            #region Number
-            Container<int> container = new();
-            container.Add(100);
-            Console.WriteLine(container.Get());
-            #endregion
-            ////////
-            #region String
-            Container<string> container1 = new();
-            container1.Add("Shahd");
-            Console.WriteLine(container1.Get()); 
-            #endregion
+            //#region Number
+            //Container<int> container = new();
+            //container.Add(100);
+            //Console.WriteLine(container.Get());
+            //#endregion
+            //////////
+            //#region String
+            //Container<string> container1 = new();
+            //container1.Add("Shahd");
+            //Console.WriteLine(container1.Get()); 
+            //#endregion
 
             #endregion
+            #region Question 03
+            Pair<int,string> employee = new(1, "Shahd");
+            Console.WriteLine(employee.First);
+            Console.WriteLine(employee.Second);
+            #endregion
+
         }
     }
 }
