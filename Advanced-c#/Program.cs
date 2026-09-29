@@ -110,12 +110,23 @@ namespace Advanced_c_
             //Console.WriteLine(book.Title);
             #endregion
             #region Question 13
-            var intContainer = new DefaultContainer<int>();
-            Console.WriteLine(intContainer.GetDefault());
+            //var intContainer = new DefaultContainer<int>();
+            //Console.WriteLine(intContainer.GetDefault());
 
             #endregion
+            #region Question 14
+            SafeList<int> numbers = new SafeList<int>();
 
+            numbers.Add(10);
+            numbers.Add(20);
+            numbers.Add(30);
+
+            Console.WriteLine(numbers.Get(1));
+            Console.WriteLine(numbers.Get(5));
         }
+            #endregion
 
     }
-}
+
+    }
+
