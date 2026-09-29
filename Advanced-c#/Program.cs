@@ -34,14 +34,20 @@ namespace Advanced_c_
             //Console.WriteLine(employee.Second);
             #endregion
             #region Question 04
-            int a = 5;
-            int b = 10;
-            Utility<int>.Swap(ref a, ref b);
+            //int a = 5;
+            //int b = 10;
+            //Utility<int>.Swap(ref a, ref b);
 
-            Console.WriteLine(a);
-            Console.WriteLine(b);
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
 
 
+            #endregion
+            #region Question 05
+            int max = Utility<int>.FindMax(10, 20);
+            Console.WriteLine(max);
+            double maxDouble = Utility<double>.FindMax(10.5, 7.5);
+            Console.WriteLine(maxDouble); 
             #endregion
 
         }
