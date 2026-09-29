@@ -44,10 +44,23 @@ namespace Advanced_c_
 
             #endregion
             #region Question 05
-            int max = Utility<int>.FindMax(10, 20);
-            Console.WriteLine(max);
-            double maxDouble = Utility<double>.FindMax(10.5, 7.5);
-            Console.WriteLine(maxDouble); 
+            //int max = Utility<int>.FindMax(10, 20);
+            //Console.WriteLine(max);
+            //double maxDouble = Utility<double>.FindMax(10.5, 7.5);
+            //Console.WriteLine(maxDouble); 
+            #endregion
+            #region Question 07
+            NumberContainer<int> n1 = new NumberContainer<int>();
+            n1.Value = 10;
+            Console.WriteLine(n1.Value);
+
+            NumberContainer<double> n2 = new NumberContainer<double>();
+            n2.Value = 5.5;
+            Console.WriteLine(n2.Value);
+
+            NumberContainer<bool> n3 = new NumberContainer<bool>();
+            n3.Value = true;
+            Console.WriteLine(n3.Value);
             #endregion
 
         }
